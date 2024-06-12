@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passport Application Signup</title>
+</head>
+<body>
+    <center>
+        <div>
+            <h2>Sign Up</h2>
+            <form class="signup-form" action="#" method="post">
+                <label for="fullname">Full Name</label><br>
+                <input type="text" id="fullname" name="fullname" required><br><br>
+                
+                <label for="lastname">Last Name</label><br>
+                <input type="text" id="lastname" name="lastname" required><br><br>
+                
+                <label for="mobile">Mobile Number</label><br>
+                <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required><br><br>
+                
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password" required><br><br>
+                
+                <label for="confirmpassword">Confirm Password</label><br>
+                <input type="password" id="confirmpassword" name="confirmpassword" required><br><br>
+                
+                <button type="submit">SignUp</button><br><br>
+                Already have an account?
+                <a href="login.html">Log in here.</a>
+            </form>
+        </div>
+        <div>
+            <a href="home.html">Home</a>
+        </div>
+    </center>
+</body>
+</html>

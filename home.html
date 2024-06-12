@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passport Application Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding-top: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        header .logo img {
+            display: block;
+            margin: 0 auto;
+        }
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0;
+            list-style-type: none;
+            background-color: #343a40;
+        }
+        nav ul li {
+            margin: 5px 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li select {
+            margin: 5px 10px;
+            padding: 5px;
+        }
+        #notice-bar {
+            background-color: #ffcc00;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .container > div {
+            flex: 1 1 45%;
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .search-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .search-container input {
+            flex: 1;
+            margin-right: 10px;
+            padding: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #343a40;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="logo.jfif" alt="Passport Logo" width="150">
+    </div>
+    <h1>Passport Application System</h1>
+</header>
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Apply for Passport</a></li>
+        <li><a href="#">Download Forms</a></li>
+        <li><a href="#">Check Application Status</a></li>
+        <li><a href="#">FAQ and Rules</a></li>
+        <li><a href="#">Steps to Apply</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Sitemap</a></li>
+        <li><a href="#">Passport Offices</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Register</a></li>
+        <li>
+            <select id="langSelect">
+                <option value="hn">हिंदी</option>
+                <!-- Add more languages as needed -->
+            </select>
+        </li>
+    </ul>
+</nav>
+<div id="notice-bar">
+    <span>This is a scrolling notice bar. You can add important announcements or updates here.</span>
+</div>
+<div class="container">
+    <div class="search-container">
+        <input type="text" placeholder="Search...">
+        <button type="submit" class="btn btn-primary">Search</button>
+    </div>
+    <div class="latest-news">
+        <h2>Latest News</h2>
+        <p>Here you can display the latest news related to passport application.</p>
+    </div>
+    <div class="circular">
+        <h2>Important Circular</h2>
+        <p>Display important circulars related to passport application.</p>
+    </div>
+    <div class="case-studies">
+        <h2>Case Studies</h2>
+        <p>Explore case studies related to successful passport applications.</p>
+    </div>
+    <div class="government-agenda">
+        <h2>Government Agenda</h2>
+        <p>Find out about the government's agenda regarding passport issuance.</p>
+    </div>
+    <div class="content">
+        <h2>Welcome to the Passport Application Portal</h2>
+        <p>Please select an option from the menu above to get started.</p>
+    </div>
+    <div class="feedback">
+        <h2>Feedback</h2>
+        <p>We value your feedback! Please let us know how we can improve our services.</p>
+    </div>
+    <div class="external-links">
+        <h2>External Links</h2>
+        <p>Add useful external links here.</p>
+    </div>
+</div>
+<footer>
+    <p>&copy; 2024 Passport Application System. All rights reserved.</p>
+</footer>
+</body>
+</html>

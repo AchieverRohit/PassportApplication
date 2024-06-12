@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passport Application Payment</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0;">
+
+    <div class="container mt-4">
+        <h2 class="text-center">Passport Application Payment</h2>
+
+        <form action="process_payment.html" method="post">
+            <div class="form-group">
+                <label for="payment_amount">Payment Amount:</label>
+                <input type="text" id="payment_amount" name="payment_amount" placeholder="Enter amount"
+                    class="form-control">
+            </div>
+
+            <h3 class="mt-4 mb-2">Payment Methods:</h3>
+
+            <div class="form-check">
+                <input type="radio" id="upi" name="payment_method" value="upi" class="form-check-input">
+                <label for="upi" class="form-check-label">UPI</label>
+                <input type="text" id="upi_id" name="upi_id" placeholder="Enter UPI ID"
+                    class="form-control mt-2">
+            </div>
+
+            <div class="form-check mt-3">
+                <input type="radio" id="card" name="payment_method" value="card" class="form-check-input">
+                <label for="card" class="form-check-label">Credit/Debit Card</label>
+                <input type="text" id="card_number" name="card_number" placeholder="Enter card number"
+                    class="form-control mt-2">
+                <input type="text" id="expiry_date" name="expiry_date" placeholder="Enter expiry date"
+                    class="form-control mt-2">
+                <input type="text" id="cvv" name="cvv" placeholder="Enter CVV" class="form-control mt-2">
+                <input type="text" id="name_on_card" name="name_on_card" placeholder="Enter name on card"
+                    class="form-control mt-2">
+            </div>
+
+            <div class="form-check mt-3">
+                <input type="radio" id="net_banking" name="payment_method" value="net_banking"
+                    class="form-check-input">
+                <label for="net_banking" class="form-check-label">Net Banking</label>
+                <input type="text" id="bank_name" name="bank_name" placeholder="Enter bank name"
+                    class="form-control mt-2">
+                <input type="text" id="account_holder" name="account_holder" placeholder="Enter account holder"
+                    class="form-control mt-2">
+                <input type="text" id="account_number" name="account_number" placeholder="Enter account number"
+                    class="form-control mt-2">
+                <input type="text" id="ifsc_code" name="ifsc_code" placeholder="Enter IFSC code"
+                    class="form-control mt-2">
+            </div>
+
+            <div class="form-check mt-3">
+                <input type="checkbox" id="terms" name="terms" required class="form-check-input">
+                <label for="terms" class="form-check-label">I agree to the Terms and Conditions</label>
+            </div>
+
+            <button type="submit" class="btn btn-success mt-3">Submit Payment</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application History - Passport Application System</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="mb-4">Passport Application History</h1>
+        <div class="form-row mb-4">
+            <div class="col-auto">
+                <label for="searchType" class="sr-only">Search By:</label>
+                <select id="searchType" class="form-control">
+                    <option value="all">All</option>
+                    <option value="id">Application ID</option>
+                    <option value="name">Applicant Name</option>
+                    <option value="date">Application Date</option>
+                    <option value="status">Status</option>
+                </select>
+            </div>
+            <div class="col">
+                <input type="text" id="searchInput" class="form-control" placeholder="Enter search term">
+            </div>
+        </div>
+        <table class="table">
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col">Application ID</th>
+                    <th scope="col">Applicant Name</th>
+                    <th scope="col">Application Date</th>
+                    <th scope="col">Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>123456</td>
+                    <td>Rohit Bachhav</td>
+                    <td>2024-06-01</td>
+                    <td>Processing</td>
+                </tr>
+                <tr>
+                    <td>789012</td>
+                    <td>Sanket patil</td>
+                    <td>2024-05-25</td>
+                    <td>Approved</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
